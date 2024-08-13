@@ -19,6 +19,7 @@
 variable "project_id" {
   description = "The GCP project to use for integration tests"
   type        = string
+   default     = "my-1st-project-428610"
 }
 
 variable "region" {
@@ -35,10 +36,12 @@ variable "zone" {
 
 variable "subnetwork" {
   description = "The subnetwork selflink to host the compute instances in"
+    default     = "default"
 }
 
 variable "num_instances" {
   description = "Number of instances to create"
+  default ="1"
 }
 
 variable "nat_ip" {
